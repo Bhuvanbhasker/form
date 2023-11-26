@@ -1,0 +1,172 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/img/er1.jpg);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.hero {
+    background-image: url('background.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    -webkit-text-fill-color: rgb(23, 146, 233);
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.about p {
+    font-size: 1.2em;
+}
+
+.services {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    background-image: url(/img/blog/blog-recent-4.jpg);
+}
+
+
+.service-item {
+    margin: 40px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-item i {
+    font-size: 3em;
+    color: #3498db;
+}
+
+.contact {
+    background-color: #3498db;
+    color: #fff;
+    padding: 60px 0;
+    background-image: url(/img/tabs-1.jpg);
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #3498db;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.contact button:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: left;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    nav a {
+        padding: 10px;
+        display: block;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+}
