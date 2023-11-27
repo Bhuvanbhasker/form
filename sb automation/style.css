@@ -11,10 +11,13 @@ h1 {
     text-align: center; /* Center the text horizontally */
 }
 img {
-    max-width: 100%;
+    max-width: 10%;
     height: 10;
     display: block;
     margin: 0 auto;
+}
+Automation.hero{
+
 }
 
 .container {
@@ -30,6 +33,13 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333; /* Adjust the background color as needed */
+    color: #fff; /* Adjust the text color as needed */
+    
 }
 
 nav ul {
