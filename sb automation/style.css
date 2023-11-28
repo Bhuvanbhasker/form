@@ -12,12 +12,17 @@ h1 {
     color: black;
 
 }
-img {
-    max-width: 10%;
-    height: 10;
-    display: block;
-    margin: 0 auto;
+.logo {
+    position:absolute;
+    top: 10px;
+    left: 50px;
+    max-height: 20px; /* Adjust the max-height as needed */
+    width:50px;
+    height:50px;
+    opacity:0.5;
+    
 }
+
 
 
 
@@ -26,6 +31,8 @@ img {
     width: 80%;
     margin: 0 auto;
 }
+/* Add these styles to your existing CSS file */
+
 
 header {
     background-color: #f4efef;
@@ -39,10 +46,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #edeaea; /* Adjust the background color as needed */
+    background-color: white; /* Adjust the background color as needed */
     color: #fff; /* Adjust the text color as needed */
+  
     
 }
+/* Add these styles to your existing CSS file */
+
 
 nav ul {
     list-style: none;
@@ -72,17 +82,25 @@ section {
 }
 
 .hero {
-    /* background-image: url('background.jpg'); */
+    /* background-image: url('/img/er3.jpg'); */
     background-size: cover;
-    color: #fff;
+    color: black;
     padding: 100px 0;
     position: relative;
 }
+/* Add these styles to your existing CSS file */
+
+.Automation Image {
+    width: 100%; /* Set the width to 100% of its container */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Cover the entire container, cropping if necessary */
+}
+
 
 .hero h2 {
     font-size: 3em;
     margin-bottom: 20px;
-    -webkit-text-fill-color: rgb(230, 213, 213);
+    -webkit-text-fill-color: rgb(17, 16, 16);
 }
 
 .hero p {
@@ -193,3 +211,7 @@ footer {
         display: flex;
     }
 }
+
+
+
+
